@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mia calcolatrice</title>
+    <link rel="stylesheet" href="assets/css/stile.css">
+</head>
+
+<body>
+    <div id="calcolatrice">
+        <h1>La mia calcolatrice in JS</h1>
+        <div>
+            <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+        </div>
+        <div class="content">
+            <div class="content">
+                <button type="button" id="7" onclick="altro(this.id)" class="tasto">7</button>
+                <button type="button" id="8" onclick="altro(this.id)" class="tasto">8</button>
+                <button type="button" id="9" onclick="altro(this.id)" class="tasto">9</button>
+                <button type="button" id="/" onclick="altro(this.id)" class="tasto">/</button>
+            </div>
+            <div class="content">
+                <button type="button" id="4" onclick="altro(this.id)" class="tasto">4</button>
+                <button type="button" id="5" onclick="altro(this.id)" class="tasto">5</button>
+                <button type="button" id="6" onclick="altro(this.id)" class="tasto">6</button>
+                <button type="button" id="*" onclick="altro(this.id)" class="tasto">X</button>
+            </div>
+            <div class="content">
+                <button type="button" id="1" value="1" onclick="altro(this.id)" class="tasto">1</button>
+                <button type="button" id="2" value="2" onclick="altro(this.id)" class="tasto">2</button>
+                <button type="button" id="3" value="3" onclick="altro(this.id)" class="tasto">3</button>
+                <button type="button" id="-" value="-" onclick="altro(this.id)" class="tasto">-</button>
+            </div>
+            <div class="content">
+                <button type="button" value="C" onclick="cancella()" class="tasto">C</button>
+                <button type="button" id="0" value="0" onclick="altro(this.id)" class="tasto">0</button>
+                <button type="button" id="." value="." onclick="altro(this.id)" class="tasto">.</button>
+                <button type="button" id="+" value="+" onclick="altro(this.id)" class="tasto">+</button>
+            </div>
+            <div class="content">
+                <button value="=" onclick="operazione()" class="uguale tasto">=</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
